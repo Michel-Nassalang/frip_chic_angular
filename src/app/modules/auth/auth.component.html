@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row content d-flex">
+        <div class="col-lg-6 col-md-10">
+            <img src="../../../assets/diamono.png" width="100%" alt="" srcset="">
+        </div>
+        <div class="col-lg-6 col-md-10">
+            <div class="row">
+                <div class="login-wrap">
+                    <div class="login-html">
+                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1"
+                            class="tab">Connexion</label>
+                        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2"
+                            class="tab">Inscription</label>
+                        <div class="login-form">
+                            <div class="sign-in-htm">
+                                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                                    <div class="group">
+                                        <label for="user" class="label">Nom utilisateur</label>
+                                        <input id="user" formControlName="user" type="text" class="input">
+                                    </div>
+                                    <div class="group">
+                                        <label for="pass" class="label">Mot de Passe</label>
+                                        <input id="pass" formControlName="pass" type="password" class="input" data-type="password">
+                                    </div>
+                                    <div class="group">
+                                        <input id="check" type="checkbox" class="check" checked>
+                                        <label for="check"><span class="icon"></span>Me garder connecter</label>
+                                    </div>
+                                    <div class="group">
+                                        <input type="submit" class="button" value="Se connecter">
+                                    </div>
+                                    <div class="hr"></div>
+                                    <div class="foot-lnk">
+                                        <a href="#forgot">Mot de passe oublié ?</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="sign-up-htm">
+                                <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                                    <div class="group">
+                                        <label for="user" class="label">Nom utilisateur</label>
+                                        <input id="user" formControlName="usersign" type="text" class="input">
+                                    </div>
+                                    <div class="group">
+                                        <label for="pass" class="label">Mot de passe</label>
+                                        <input id="pass" formControlName="passsign" type="password" class="input" data-type="password">
+                                    </div>
+                                    <div class="group">
+                                        <label for="pass" class="label">Confirmation MDP</label>
+                                        <input id="pass" formControlName="confirmpass" type="password" class="input" data-type="password">
+                                    </div>
+                                    <div class="group">
+                                        <label for="pass" class="label">Email</label>
+                                        <input id="pass" formControlName="email" type="text" class="input">
+                                    </div>
+                                    <div class="group">
+                                        <input type="submit" class="button" value="S'inscrire">
+                                    </div>
+                                    <div class="hr"></div>
+                                    <div class="foot-lnk">
+                                        <label for="tab-1"></label><a>Déjà inscris ?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

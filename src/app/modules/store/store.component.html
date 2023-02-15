@@ -1,0 +1,516 @@
+<!-- BREADCRUMB -->
+		<div id="breadcrumb" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="breadcrumb-tree">
+							<li><a routerLink="">Acceuil</a></li>
+							<li><a routerLink="">Toutes categories</a></li>
+							<li><a routerLink="" class="active">Nom Categorie</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /BREADCRUMB -->
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- ASIDE -->
+					<div id="aside" class="col-md-3">
+						<!-- aside Widget -->
+						<div class="aside">
+							<h3 class="aside-title">Categories</h3>
+							<div class="checkbox-filter">
+
+								<div class="input-checkbox">
+									<input type="checkbox" id="category-1">
+									<label for="category-1">
+										<span></span>
+										3 chambres
+										<small>(120)</small>
+									</label>
+								</div>
+
+								<div class="input-checkbox">
+									<input type="checkbox" id="category-2">
+									<label for="category-2">
+										<span></span>
+										4 chambres
+										<small>(740)</small>
+									</label>
+								</div>
+
+								<div class="input-checkbox">
+									<input type="checkbox" id="category-3">
+									<label for="category-3">
+										<span></span>
+										5 chambres
+										<small>(1450)</small>
+									</label>
+								</div>
+
+								<div class="input-checkbox">
+									<input type="checkbox" id="category-4">
+									<label for="category-4">
+										<span></span>
+										Chambres + Salle de bain
+										<small>(578)</small>
+									</label>
+								</div>
+
+								<div class="input-checkbox">
+									<input type="checkbox" id="category-5">
+									<label for="category-5">
+										<span></span>
+										Chambres + Salon
+										<small>(120)</small>
+									</label>
+								</div>
+
+								<div class="input-checkbox">
+									<input type="checkbox" id="category-6">
+									<label for="category-6">
+										<span></span>
+										Chambres + Salon + Hall
+										<small>(740)</small>
+									</label>
+								</div>
+							</div>
+						</div>
+						<!-- /aside Widget -->
+
+						<!-- aside Widget -->
+						<div class="aside">
+							<h3 class="aside-title">Prix</h3>
+							<div class="price-filter">
+								<div id="price-slider">
+									<ngx-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ngx-slider>
+								</div>
+								<div class="input-number price-min">
+									<input id="price-min" type="number" [value]="minValue">
+									<span class="qty-up">+</span>
+									<span class="qty-down">-</span>
+								</div>
+								<span>-</span>
+								<div class="input-number price-max">
+									<input id="price-max" type="number" [value]="maxValue">
+									<span class="qty-up">+</span>
+									<span class="qty-down">-</span>
+								</div>
+							</div>
+						</div>
+						<!-- /aside Widget -->
+
+						<!-- aside Widget -->
+						<div class="aside">
+							<h3 class="aside-title">Régions</h3>
+							<div class="checkbox-filter">
+								<div class="input-checkbox">
+									<input type="checkbox" id="brand-1">
+									<label for="brand-1">
+										<span></span>
+										Saint-Louis
+										<small>(578)</small>
+									</label>
+								</div>
+								<div class="input-checkbox">
+									<input type="checkbox" id="brand-2">
+									<label for="brand-2">
+										<span></span>
+										Dakar
+										<small>(125)</small>
+									</label>
+								</div>
+								<div class="input-checkbox">
+									<input type="checkbox" id="brand-3">
+									<label for="brand-3">
+										<span></span>
+										Thiès
+										<small>(755)</small>
+									</label>
+								</div>
+								<div class="input-checkbox">
+									<input type="checkbox" id="brand-4">
+									<label for="brand-4">
+										<span></span>
+										Ziguinchor
+										<small>(578)</small>
+									</label>
+								</div>
+								<div class="input-checkbox">
+									<input type="checkbox" id="brand-5">
+									<label for="brand-5">
+										<span></span>
+										Kédougou
+										<small>(125)</small>
+									</label>
+								</div>
+								<div class="input-checkbox">
+									<input type="checkbox" id="brand-6">
+									<label for="brand-6">
+										<span></span>
+										Kaolack
+										<small>(755)</small>
+									</label>
+								</div>
+							</div>
+						</div>
+						<!-- /aside Widget -->
+
+						<!-- aside Widget -->
+						<div class="aside">
+							<h3 class="aside-title">Top Ventes</h3>
+							<div class="product-widget">
+								<div class="product-img">
+									<img src="../../../assets/img/600-600/g1.png" alt="">
+								</div>
+								<div class="product-body">
+									<p class="product-category">Categorie</p>
+									<h3 class="product-name"><a routerLink="">Nom Produit</a></h3>
+									<h4 class="product-price">250.000 FCFA <del class="product-old-price">325.000 FCFA</del></h4>
+								</div>
+							</div>
+
+							<div class="product-widget">
+								<div class="product-img">
+									<img src="../../../assets/img/600-600/g3.png" alt="">
+								</div>
+								<div class="product-body">
+									<p class="product-category">Categorie</p>
+									<h3 class="product-name"><a routerLink="">Nom Produit</a></h3>
+									<h4 class="product-price">250.000 FCFA <del class="product-old-price">325.000 FCFA</del></h4>
+								</div>
+							</div>
+
+							<div class="product-widget">
+								<div class="product-img">
+									<img src="../../../assets/img/600-600/p6.png" alt="">
+								</div>
+								<div class="product-body">
+									<p class="product-category">Categorie</p>
+									<h3 class="product-name"><a routerLink="">Nom Produit</a></h3>
+									<h4 class="product-price">250.000 FCFA <del class="product-old-price">325.000 FCFA</del></h4>
+								</div>
+							</div>
+						</div>
+						<!-- /aside Widget -->
+					</div>
+					<!-- /ASIDE -->
+
+					<!-- STORE -->
+					<div id="store" class="col-md-9">
+						<!-- store top filter -->
+						<div class="store-filter clearfix">
+							<div class="store-sort">
+								<label>
+									Trier par :
+									<select class="input-select">
+										<option value="0">Prix</option>
+										<option value="1">Notation</option>
+										<option value="2">Position</option>
+									</select>
+								</label>
+
+								<label>
+									Lot :
+									<select class="input-select">
+										<option value="0">20</option>
+										<option value="1">50</option>
+									</select>
+								</label>
+							</div>
+							<ul class="store-grid">
+								<li class="active"><i class="fa fa-th"></i></li>
+								<li><a routerLink=""><i class="fa fa-th-list"></i></a></li>
+							</ul>
+						</div>
+						<!-- /store top filter -->
+
+						<!-- store products -->
+						<div class="row">
+							<!-- product -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../../../assets/img/600-600/g4.png" alt="">
+										<div class="product-label">
+											<span class="sale">-30%</span>
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categorie</p>
+										<h3 class="product-name"><a routerLink="">Nom Produit</a></h3>
+										<h4 class="product-price">250.000 FCFA <del class="product-old-price">325.000 FCFA</del></h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">souhaiter</span></button>
+											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Voir</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Commander</button>
+									</div>
+								</div>
+							</div>
+							<!-- /product -->
+
+							<!-- product -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../../../assets/img/600-600/g5.png" alt="">
+										<div class="product-label">
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categorie</p>
+										<h3 class="product-name"><a routerLink="">Nom Produit</a></h3>
+										<h4 class="product-price">250.000 FCFA <del class="product-old-price">325.000 FCFA</del></h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">souhaiter</span></button>
+											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Voir</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Commander</button>
+									</div>
+								</div>
+							</div>
+							<!-- /product -->
+
+							<div class="clearfix visible-sm visible-xs"></div>
+
+							<!-- product -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../../../assets/img/600-600/p11.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categorie</p>
+										<h3 class="product-name"><a routerLink="">Nom Produit</a></h3>
+										<h4 class="product-price">250.000 FCFA <del class="product-old-price">325.000 FCFA</del></h4>
+										<div class="product-rating">
+										</div>
+										<div class="product-btns">
+											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">souhaiter</span></button>
+											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Voir</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Commander</button>
+									</div>
+								</div>
+							</div>
+							<!-- /product -->
+
+							<div class="clearfix visible-lg visible-md"></div>
+
+							<!-- product -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../../../assets/img/600-600/p5.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categorie</p>
+										<h3 class="product-name"><a routerLink="">Nom Produit</a></h3>
+										<h4 class="product-price">250.000 FCFA <del class="product-old-price">325.000 FCFA</del></h4>
+										<div class="product-rating">
+										</div>
+										<div class="product-btns">
+											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">souhaiter</span></button>
+											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Voir</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Commander</button>
+									</div>
+								</div>
+							</div>
+							<!-- /product -->
+
+							<div class="clearfix visible-sm visible-xs"></div>
+
+							<!-- product -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../../../assets/img/600-600/p1.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categorie</p>
+										<h3 class="product-name"><a routerLink="">Nom Produit</a></h3>
+										<h4 class="product-price">250.000 FCFA <del class="product-old-price">325.000 FCFA</del></h4>
+										<div class="product-rating">
+										</div>
+										<div class="product-btns">
+											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">souhaiter</span></button>
+											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Voir</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Commander</button>
+									</div>
+								</div>
+							</div>
+							<!-- /product -->
+
+							<!-- product -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../../../assets/img/600-600/p3.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categorie</p>
+										<h3 class="product-name"><a routerLink="">Nom Produit</a></h3>
+										<h4 class="product-price">250.000 FCFA <del class="product-old-price">325.000 FCFA</del></h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">souhaiter</span></button>
+											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Voir</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Commander</button>
+									</div>
+								</div>
+							</div>
+							<!-- /product -->
+
+							<div class="clearfix visible-lg visible-md visible-sm visible-xs"></div>
+
+							<!-- product -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../../../assets/img/600-600/p13.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categorie</p>
+										<h3 class="product-name"><a routerLink="">Nom Produit</a></h3>
+										<h4 class="product-price">250.000 FCFA <del class="product-old-price">325.000 FCFA</del></h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">souhaiter</span></button>
+											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Voir</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Commander</button>
+									</div>
+								</div>
+							</div>
+							<!-- /product -->
+
+							<!-- product -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../../../assets/img/600-600/p10.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categorie</p>
+										<h3 class="product-name"><a routerLink="">Nom Produit</a></h3>
+										<h4 class="product-price">250.000 FCFA <del class="product-old-price">325.000 FCFA</del></h4>
+										<div class="product-rating">
+										</div>
+										<div class="product-btns">
+											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">souhaiter</span></button>
+											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Voir</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Commander</button>
+									</div>
+								</div>
+							</div>
+							<!-- /product -->
+
+							<div class="clearfix visible-sm visible-xs"></div>
+
+							<!-- product -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="../../../assets/img/600-600/g7.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Categorie</p>
+										<h3 class="product-name"><a routerLink="">Nom Produit</a></h3>
+										<h4 class="product-price">250.000 FCFA <del class="product-old-price">325.000 FCFA</del></h4>
+										<div class="product-rating">
+										</div>
+										<div class="product-btns">
+											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">souhaiter</span></button>
+											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Voir</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Commander</button>
+									</div>
+								</div>
+							</div>
+							<!-- /product -->
+						</div>
+						<!-- /store products -->
+
+						<!-- store bottom filter -->
+						<div class="store-filter clearfix">
+							<span class="store-qty">Affichage à 20 produits</span>
+							<ul class="store-pagination">
+								<li class="active">1</li>
+								<li><a routerLink="">2</a></li>
+								<li><a routerLink="">3</a></li>
+								<li><a routerLink="">4</a></li>
+								<li><a routerLink=""><i class="fa fa-angle-right"></i></a></li>
+							</ul>
+						</div>
+						<!-- /store bottom filter -->
+					</div>
+					<!-- /STORE -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<app-newsletter></app-newsletter>

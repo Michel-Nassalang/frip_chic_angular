@@ -1,0 +1,150 @@
+<!-- Start Checkout -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-12">
+      <div class="checkout-form">
+        <h2>Caisse</h2>
+        <p>Passage du panier à la caisse</p>
+        <!-- Form -->
+        <form class="form" method="post" action="#">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <label>Prénom<span>*</span></label>
+                <input type="text" name="fname" placeholder="Prénom" required="required">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <label>Nom<span>*</span></label>
+                <input type="text" name="lname" placeholder="Nom" required="required">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <label>Adresse Mail<span>*</span></label>
+                <input type="email" name="email" placeholder="" required="required">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <label>Numéro télephone<span>*</span></label>
+                <input type="number" name="number" placeholder="" required="required">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <label>Régions<span>*</span></label>
+                <select name="country_name" id="country">
+                  <option value="TH">Thiès</option>
+                  <option value="DK">Dakar</option>
+                  <option value="AL">Saint-Louis</option>
+                  <option value="ZC">Ziguinchor</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <label>Ville<span>*</span></label>
+                <select name="state-province" id="state-province">
+                  <option value="divition" selected="selected">New York</option>
+                  <option>Los Angeles</option>
+                  <option>Chicago</option>
+                  <option>Houston</option>
+                  <option>San Diego</option>
+                  <option>Dallas</option>
+                  <option>Charlotte</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <label>Addresse<span>*</span></label>
+                <input type="text" name="address" placeholder="" required="required">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <label>Addresse précise<span>*</span></label>
+                <input type="text" name="address" placeholder="" required="required">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <label>Code postale<span>*</span></label>
+                <input type="text" name="post" placeholder="" required="required">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <label>Compagnie<span>*</span></label>
+                <select name="company_name" id="company">
+                  <option value="company" selected="selected">Microsoft</option>
+                  <option>Apple</option>
+                  <option>Xaiomi</option>
+                  <option>Huawer</option>
+                  <option>Wpthemesgrid</option>
+                  <option>Samsung</option>
+                  <option>Motorola</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group create-account">
+                <input id="cbox" type="checkbox">
+                <label>Créer un compte?</label>
+              </div>
+            </div>
+          </div>
+        </form>
+        <!--/ End Form -->
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="order-details">
+        <!-- Order Widget -->
+        <div class="single-widget">
+          <h2>Total panier</h2>
+          <div class="content">
+            <ul>
+              <li>Sur Total<span>$330.00</span></li>
+              <li>(+) Expédition<span>$10.00</span></li>
+              <li class="last">Total<span>$340.00</span></li>
+            </ul>
+          </div>
+        </div>
+        <!--/ End Order Widget -->
+        <!-- Order Widget -->
+        <div class="single-widget">
+          <h2>Payements</h2>
+          <div class="content">
+            <div class="checkbox">
+              <label class="checkbox-inline" for="1"><input name="updates" id="1" type="checkbox"> Vérifier les
+                payements</label>
+              <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox"> Payer par Cash </label>
+              <label class="checkbox-inline" for="3"><input name="news" id="3" type="checkbox"> PayPal</label>
+            </div>
+          </div>
+        </div>
+        <!--/ End Order Widget -->
+        <!-- Payment Method Widget -->
+        <div class="single-widget payement">
+          <div class="content">
+            <img src="../../../assets/img/payment-method.png" alt="#" width="100%">
+          </div>
+        </div>
+        <!--/ End Payment Method Widget -->
+        <!-- Button Widget -->
+        <div class="single-widget get-button">
+          <div class="content">
+            <div class="button">
+              <a href="#" class="btn">Procèder au payement</a>
+            </div>
+          </div>
+        </div>
+        <!--/ End Button Widget -->
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ End Checkout -->

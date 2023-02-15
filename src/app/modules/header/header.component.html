@@ -1,0 +1,144 @@
+<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a routerLink=""><i class="fa fa-phone"></i> +221771112236 / +221762004174</a></li>
+						<li><a routerLink=""><i class="fa fa-envelope-o"></i> diamono.services@gmail.com</a></li>
+						<li><a routerLink=""><i class="fa fa-map-marker"></i> Saly Carrefour</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<li><a><i class="fa fa-dollar"></i> Francs CFA</a></li>
+						<li><a routerLink="/auth"><i class="fa fa-user-o"></i> Mon compte</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="" class="logo">
+									<img src="../../../assets/img/logo.png" alt="">
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->
+
+						<!-- SEARCH BAR -->
+						<div class="col-md-6">
+							<div class="header-search">
+								<form>
+									<select class="input-select" name="category" [(ngModel)]="categoryCollect">
+										<option value="Categories">Catégories</option>
+										<option *ngFor="let category of categoryList" value="{{category.name}}">{{category.name}}</option>
+									</select>
+									<input class="input" placeholder="Rechercher ici" name="search" [(ngModel)]="search" >
+									<button class="search-btn" (click)="research(search, categoryCollect)"><i class="fa fa-search"></i></button>
+								</form>
+							</div>
+						</div>
+						<!-- /SEARCH BAR -->
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								<!-- Wishlist -->
+								<div>
+									<a routerLink="/wish">
+										<i class="fa fa-heart-o"></i>
+										<span>Vos souhaits</span>
+										<div class="qty">5</div>
+									</a>
+								</div>
+								<!-- /Wishlist -->
+
+								<!-- Cart -->
+								<div class="dropdown">
+									<a class="dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="true">
+										<i class="fa fa-shopping-cart"></i>
+										<span>Votre panier</span>
+										<div class="qty">2</div>
+									</a>
+									<div class="cart-dropdown">
+										<div class="cart-list">
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="../../../assets/img/600-600/p1.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a routerLink="">Produit 1</a></h3>
+													<h4 class="product-price"><span class="qty">1x</span>105000.00 Francs</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="../../../assets/img/600-600/p4.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a routerLink="">Produit 2</a></h3>
+													<h4 class="product-price"><span class="qty">3x</span>75000.00 Francs</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+										</div>
+										<div class="cart-summary">
+											<small>2 produits sélectionnés</small>
+											<h5>TOTAL: 180000 Francs CFA</h5>
+										</div>
+										<div class="cart-btns">
+											<a routerLink="/cart">Voir panier</a>
+											<a routerLink="/checkout">Caisse  <i class="fa fa-arrow-circle-right"></i></a>
+										</div>
+									</div>
+								</div>
+								<!-- /Cart -->
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						<li class=""><a routerLink="">Acceuil</a></li>
+						<li><a routerLink="/shop" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Produits</a></li>
+						<li><a routerLink="/services">Services</a></li>
+						<li><a routerLink="/about">Contacts</a></li>
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+		<!-- /NAVIGATION -->

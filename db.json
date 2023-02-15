@@ -1,0 +1,181 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Appartement Lux Delatt",
+            "quantity": 5,
+            "notation": 4,
+            "price": 230000,
+            "categoryId": 1
+        },
+        {
+            "id": 2,
+            "title": "Keur Samba ",
+            "quantity": 1,
+            "notation": 5,
+            "price": 450000,
+            "categoryId": 2
+        },
+        {
+            "id": 3,
+            "title": "Guidélam",
+            "quantity": 1,
+            "notation": 3,
+            "price": 150000,
+            "categoryId": 3
+        },
+        {
+            "id": 4,
+            "title": "Appartement 5 etoile",
+            "quantity": 7,
+            "notation": 5,
+            "price": 275000,
+            "categoryId": 1
+        },
+        {
+            "id": 5,
+            "title": "Appartement Firdaws",
+            "quantity": 4,
+            "notation": 4,
+            "price": 198000,
+            "categoryId": 1
+        },
+        {
+            "id": 6,
+            "title": "Appartement Dialaw",
+            "quantity": 3,
+            "notation": 4,
+            "price": 185000,
+            "categoryId": 1
+        },
+        {
+            "id": 7,
+            "title": "Appartement Guamal",
+            "quantity": 2,
+            "notation": 4,
+            "price": 155000,
+            "categoryId": 1
+        },
+        {
+            "id": 8,
+            "title": "Laplace",
+            "quantity": 2,
+            "notation": 5,
+            "price": 350000,
+            "categoryId": 2
+        },
+        {
+            "id": 9,
+            "title": "DeukeulMeu",
+            "quantity": 3,
+            "notation": 5,
+            "price": 230000,
+            "categoryId": 2
+        },
+        {
+            "id": 10,
+            "title": "L'etage",
+            "quantity": 1,
+            "notation": 5,
+            "price": 200000,
+            "categoryId": 3
+        }
+    ],
+    "categories": [
+        {
+            "id":1,
+            "name":"Appartements"
+        },
+        {
+            "id":2, 
+            "name":"Maisons"
+        },
+        {
+            "id":3, 
+            "name":"Salles de Gala"
+        },
+        {
+            "id":4,
+            "name":"Chambres"
+        }
+    ],
+    "clients":[
+        {
+            "id": 1,
+            "fname": "Adama",
+            "name": "Diedhiou",
+            "pseudo": "adams_dd",
+            "email": "diedhiou.adama@ugb.edu.sn",
+            "tel": "+221773456321",
+            "mdp": "diedhiou"
+        },
+        {
+            "id": 2,
+            "fname": "Solange",
+            "name": "Boissy",
+            "pseudo": "solo_b",
+            "email": "boissy.solarange@gmail.com",
+            "tel": "+221786537832",
+            "mdp": "boissy"
+        },
+        {
+            "id": 3,
+            "fname": "Ablaye",
+            "name": "Gueye",
+            "pseudo": "laye_g",
+            "email": "gueye.ablaye@gmail.com",
+            "tel": "+221762256786",
+            "mdp": "gueye"
+        },
+        {
+            "id": 4,
+            "fname": "Saliou",
+            "name": "Sarr",
+            "pseudo": "saliou_s",
+            "email": "sarr.saliou@gmail.com",
+            "tel": "+221776548975",
+            "mdp": "sarr"
+        },
+        {
+            "id": 5,
+            "fname": "Birame",
+            "name": "Faye",
+            "pseudo": "birame_f",
+            "email": "faye.birame@gmail.com",
+            "tel": "+221763427898",
+            "mdp": "faye"
+        }
+    ],
+    "cart": [
+        {
+            "id": 1,
+            "clientId": 4,
+            "productId": 3
+        },
+        {
+            "id": 2,
+            "clientId": 2,
+            "productId": 5
+        },
+        {
+            "id": 3,
+            "clientId": 5,
+            "productId": 1
+        },
+        {
+            "id": 4,
+            "clientId": 2,
+            "productId": 4
+        },
+        {
+            "id": 5,
+            "clientId": 2,
+            "productId": 6
+        },
+        {
+            "id": 6,
+            "clientId": 4,
+            "productId": 8
+        }
+    ]
+}
